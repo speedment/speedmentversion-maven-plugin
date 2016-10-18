@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
     <modelVersion>4.0.0</modelVersion>
+    
     <groupId>com.speedment</groupId>
     <artifactId>speedmentversion-maven-plugin</artifactId>
     <version>1.0.0-SNAPSHOT</version>
@@ -59,8 +63,8 @@
                         </manifest>
                         <manifestEntries>
                             <Trusted-Library>true</Trusted-Library>
-                            <Implementation-Vendor>Per Minborg</Implementation-Vendor>
-                            <Implementation-URL>https://github.com/minborg/kleanbean</Implementation-URL>
+                            <Implementation-Vendor>Speedment Inc.</Implementation-Vendor>
+                            <Implementation-URL>https://github.com/speedment/speedmentversion-maven-plugin</Implementation-URL>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -70,11 +74,10 @@
     
     
     <dependencies>
-        
         <dependency>
-            <groupId>com.speedment.enterprise</groupId>
-            <artifactId>enterprise-core</artifactId>
-            <version>1.1.0-SNAPSHOT</version>
+            <groupId>com.speedment.common</groupId>
+            <artifactId>invariant</artifactId>
+            <version>1.0.0</version>
         </dependency>
                 
         <!-- LICENSE INFORMATION
@@ -113,7 +116,10 @@
             <artifactId>maven-project</artifactId>
             <version>2.2.1</version>
         </dependency>
+        <dependency>
+            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
+            <version>4.11</version>
+        </dependency>
     </dependencies>
-    
-    
 </project>
